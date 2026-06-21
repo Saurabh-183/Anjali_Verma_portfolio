@@ -16,7 +16,7 @@ export default function Skills() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={staggerContainer}
-        className="bg-white/[0.02] border border-white/10 rounded-2xl md:rounded-3xl p-5 md:p-8"
+        className="bg-white/2 border border-white/10 rounded-2xl md:rounded-3xl p-5 md:p-8"
       >
         <motion.h3 variants={fadeInUp} className="text-lg font-bold text-white mb-5 md:mb-6 flex items-center gap-2">
           <Terminal className="w-5 h-5 text-blue-400" />
@@ -27,7 +27,7 @@ export default function Skills() {
             <motion.div 
               key={idx} 
               variants={fadeInUp}
-              className="group flex items-center gap-3 p-2.5 md:p-3 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] transition-colors border border-transparent hover:border-white/5"
+              className="group flex items-center gap-3 p-2.5 md:p-3 rounded-xl bg-white/2 hover:bg-white/6 transition-colors border border-transparent hover:border-white/5"
             >
               <div className="w-1.5 h-1.5 rounded-full bg-blue-500/50 group-hover:bg-blue-400 transition-colors shrink-0" />
               <span className="text-sm text-gray-300 group-hover:text-white transition-colors">{skill}</span>

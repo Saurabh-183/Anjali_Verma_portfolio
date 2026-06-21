@@ -12,7 +12,7 @@ export default function Education() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeInUp}
-      className="bg-gradient-to-br from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl md:rounded-3xl p-5 md:p-8 relative overflow-hidden group"
+      className="bg-linear-to-br from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl md:rounded-3xl p-5 md:p-8 relative overflow-hidden group"
     >
       <div className="absolute top-0 right-0 p-4 md:p-6 opacity-10 group-hover:opacity-20 transition-opacity">
         <GraduationCap className="w-16 h-16 md:w-24 md:h-24 text-blue-400" />

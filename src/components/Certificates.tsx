@@ -27,7 +27,7 @@ export default function Certificates() {
           <motion.div 
             key={idx} 
             variants={fadeInUp}
-            className="flex flex-col gap-4 p-4 md:p-5 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-white/10 hover:-translate-y-1 transition-all duration-300 relative group"
+            className="flex flex-col gap-4 p-4 md:p-5 rounded-2xl bg-white/2 border border-white/5 hover:bg-white/4 hover:border-white/10 hover:-translate-y-1 transition-all duration-300 relative group"
           >
             <div>
               <h3 className="text-gray-200 font-semibold mb-1 pr-8 leading-snug">{cert.name}</h3>

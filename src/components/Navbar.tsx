@@ -16,7 +16,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <span 
-          className="text-2xl font-black tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
+          className="text-2xl font-black tracking-tight bg-linear-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
           style={{ fontFamily: 'var(--font-castoro)' }}
         >
           Anjali <span className="text-white italic"> Verma</span>

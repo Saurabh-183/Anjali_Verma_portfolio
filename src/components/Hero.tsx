@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from 'react';
@@ -82,18 +83,18 @@ export default function Hero() {
         className="lg:col-span-5 flex justify-center lg:justify-end relative w-full"
       >
         {/* Decorative elements behind the image */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-full blur-3xl" />
-        <div className="absolute inset-4 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform rotate-6 border border-white/5" />
-        <div className="absolute inset-4 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform -rotate-3 border border-white/5" />
+        <div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 to-indigo-500/20 rounded-full blur-3xl" />
+        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform rotate-6 border border-white/5" />
+        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform -rotate-3 border border-white/5" />
         
         {/* The Image */}
-        <div className="relative w-64 h-80 sm:w-80 sm:h-[26rem] md:w-80 md:h-[28rem] rounded-[2.5rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm group shadow-2xl">
+        <div className="relative w-64 h-80 sm:w-80 sm:h-104 md:w-80 md:h-112 rounded-[2.5rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm group shadow-2xl">
           <img 
             src="/Anjali_verma_profile.jpeg" 
             alt="Anjali Verma"
             className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </motion.div>
     </motion.section>

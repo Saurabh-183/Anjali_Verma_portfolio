@@ -24,13 +24,13 @@ export default function Experience() {
 
       <motion.div variants={fadeInUp} className="group relative">
         {/* Timeline line */}
-        <div className="absolute left-[27px] top-10 bottom-0 w-px bg-gradient-to-b from-blue-500/50 to-transparent hidden sm:block" />
+        <div className="absolute left-6.75 top-10 bottom-0 w-px bg-linear-to-b from-blue-500/50 to-transparent hidden sm:block" />
         
         <div className="relative sm:pl-16">
           {/* Timeline dot */}
-          <div className="absolute left-[23px] top-2 w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,0.5)] hidden sm:block" />
+          <div className="absolute left-5.75 top-2 w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,0.5)] hidden sm:block" />
           
-          <div className="bg-white/[0.02] border border-white/10 rounded-2xl md:rounded-3xl p-5 md:p-8 hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] transition-all duration-300">
+          <div className="bg-white/2 border border-white/10 rounded-2xl md:rounded-3xl p-5 md:p-8 hover:bg-white/4 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] transition-all duration-300">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
               <div>
                 <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-blue-400 transition-colors">{resumeData.experience.role}</h3>

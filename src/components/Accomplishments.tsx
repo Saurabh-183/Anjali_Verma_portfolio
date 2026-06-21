@@ -27,7 +27,7 @@ export default function Accomplishments() {
           <motion.div 
             key={idx} 
             variants={fadeInUp}
-            className="flex items-start gap-4 p-4 md:p-5 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-white/10 hover:-translate-y-1 transition-all duration-300"
+            className="flex items-start gap-4 p-4 md:p-5 rounded-2xl bg-white/2 border border-white/5 hover:bg-white/4 hover:border-white/10 hover:-translate-y-1 transition-all duration-300"
           >
             <div className="mt-0.5 p-2 rounded-lg bg-indigo-500/10 shrink-0">
               <CheckCircle2 className="w-4 h-4 text-indigo-400" />
