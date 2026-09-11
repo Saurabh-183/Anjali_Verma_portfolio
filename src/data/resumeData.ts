@@ -4,6 +4,7 @@ export const resumeData = {
   location: "Bangalore, Karnataka",
   email: "2004anjaliverma@gmail.com",
   linkedin: "https://www.linkedin.com/in/anjali-verma-a6397b288?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  resume: "https://drive.google.com/file/d/1bz97aOLmA6rGSdeDmZV9Sex42MRMfdjv/view?usp=sharing",
   overview: "SAP Basis Consultant/Administrator with 2+ years of experience in SAP system administration, performance tuning, and technical support. Skilled in managing SAP landscapes across development, quality, and production environments, ensuring stability and security.",
   experience: {
     role: "SAP Basis Consultant",

@@ -60,7 +60,7 @@ export default function Hero() {
           {resumeData.overview}
         </motion.p>
 
-        <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 lg:gap-4 justify-center lg:justify-start">
+        <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 lg:gap-4 justify-center lg:justify-start max-w-xl">
           <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-xs sm:text-sm text-gray-700 dark:text-gray-300 backdrop-blur-md hover:bg-black/10 dark:bg-white/10 transition-colors">
             <MapPin className="w-4 h-4 text-blue-400" />
             {resumeData.location}
@@ -75,6 +75,12 @@ export default function Hero() {
             LinkedIn
             <ExternalLink className="w-3 h-3 ml-1 opacity-50 group-hover:opacity-100 transition-opacity" />
           </a>
+          {resumeData.resume && (
+            <a href={resumeData.resume} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-blue-500 to-indigo-500 text-white font-medium text-xs sm:text-sm hover:from-blue-400 hover:to-indigo-400 transition-all backdrop-blur-md group hover:-translate-y-0.5 shadow-lg shadow-blue-500/20">
+              View Resume
+              <ExternalLink className="w-4 h-4 ml-1 opacity-80 group-hover:opacity-100 transition-opacity" />
+            </a>
+          )}
         </motion.div>
       </div>
       
