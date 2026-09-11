@@ -25,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${castoro.variable} h-full antialiased scroll-smooth`}>
+    <html lang="en" className={`dark ${inter.variable} ${castoro.variable} h-full antialiased scroll-smooth`}>
       <body 
-        className="min-h-full flex flex-col bg-[#030712] text-gray-100 selection:bg-blue-500/30 selection:text-blue-200"
+        className="min-h-full flex flex-col bg-slate-50 dark:bg-[#030712] text-gray-900 dark:text-gray-100 selection:bg-blue-500/30 dark:selection:bg-blue-500/30 selection:text-blue-900 dark:selection:text-blue-200"
         style={{ fontFamily: 'var(--font-castoro)' }}
       >
         {children}

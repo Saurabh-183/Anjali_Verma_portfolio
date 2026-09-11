@@ -46,7 +46,7 @@ export default function Hero() {
         
         <motion.h1 
           variants={fadeInUp} 
-          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 text-white leading-[1.1] animated-gradient-text"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 text-gray-900 dark:text-white leading-[1.1] animated-gradient-text"
           style={{ fontFamily: 'var(--font-castoro)' }}
         >
           {resumeData.name}
@@ -56,16 +56,16 @@ export default function Hero() {
           {resumeData.role}
         </motion.h2>
         
-        <motion.p variants={fadeInUp} className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0">
+        <motion.p variants={fadeInUp} className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0">
           {resumeData.overview}
         </motion.p>
 
         <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 lg:gap-4 justify-center lg:justify-start">
-          <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300 backdrop-blur-md hover:bg-white/10 transition-colors">
+          <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-xs sm:text-sm text-gray-700 dark:text-gray-300 backdrop-blur-md hover:bg-black/10 dark:bg-white/10 transition-colors">
             <MapPin className="w-4 h-4 text-blue-400" />
             {resumeData.location}
           </div>
-          <a href={`mailto:${resumeData.email}`} className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300 hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-md group hover:-translate-y-0.5">
+          <a href={`mailto:${resumeData.email}`} className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-xs sm:text-sm text-gray-700 dark:text-gray-300 hover:bg-black/10 dark:bg-white/10 hover:border-white/20 transition-all backdrop-blur-md group hover:-translate-y-0.5">
             <Mail className="w-4 h-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
             <span className="hidden sm:inline">{resumeData.email}</span>
             <span className="sm:hidden">Email Me</span>
@@ -84,11 +84,11 @@ export default function Hero() {
       >
         {/* Decorative elements behind the image */}
         <div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 to-indigo-500/20 rounded-full blur-3xl" />
-        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform rotate-6 border border-white/5" />
-        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform -rotate-3 border border-white/5" />
+        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform rotate-6 border border-black/5 dark:border-white/5" />
+        <div className="absolute inset-4 bg-linear-to-tr from-blue-500/10 to-indigo-500/10 rounded-[3rem] transform -rotate-3 border border-black/5 dark:border-white/5" />
         
         {/* The Image */}
-        <div className="relative w-64 h-80 sm:w-80 sm:h-104 md:w-80 md:h-112 rounded-[2.5rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm group shadow-2xl">
+        <div className="relative w-64 h-80 sm:w-80 sm:h-104 md:w-80 md:h-112 rounded-[2.5rem] overflow-hidden border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-sm group shadow-2xl">
           <img 
             src="/Anjali_verma_profile.jpeg" 
             alt="Anjali Verma"

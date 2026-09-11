@@ -6,14 +6,18 @@ import Accomplishments from '../components/Accomplishments';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 import Education from '../components/Education';
+import FloatingBalls from '../components/FloatingBalls';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#030712] text-gray-100 selection:bg-blue-500/30 selection:text-blue-200">
+    <div className="relative min-h-screen overflow-hidden bg-slate-50 dark:bg-[#030712] text-gray-900 dark:text-gray-100 selection:bg-blue-500/30 dark:selection:bg-blue-500/30 selection:text-blue-900 dark:selection:text-blue-200">
+      
       {/* Background Effects */}
+      <FloatingBalls />
+      
       <div className="pointer-events-none fixed inset-0 z-0 flex justify-center overflow-hidden">
-          <div className="absolute top-[-20%] w-200 h-150 rounded-full bg-blue-900/20 blur-[150px]" />
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 dark:opacity-20 mix-blend-overlay"></div>
       </div>
 
       <Navbar />
@@ -40,6 +44,8 @@ export default function Home() {
           
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

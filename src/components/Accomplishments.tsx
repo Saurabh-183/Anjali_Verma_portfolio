@@ -19,7 +19,7 @@ export default function Accomplishments() {
         <div className="p-2.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20">
           <Award className="w-5 h-5 text-indigo-400" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">Accomplishments</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Accomplishments</h2>
       </motion.div>
 
       <div className="grid gap-4">
@@ -27,12 +27,12 @@ export default function Accomplishments() {
           <motion.div 
             key={idx} 
             variants={fadeInUp}
-            className="flex items-start gap-4 p-4 md:p-5 rounded-2xl bg-white/2 border border-white/5 hover:bg-white/4 hover:border-white/10 hover:-translate-y-1 transition-all duration-300"
+            className="flex items-start gap-4 p-4 md:p-5 rounded-2xl bg-white shadow-sm dark:bg-white/2 dark:shadow-none border border-black/5 dark:border-white/5 hover:bg-black/5 dark:hover:bg-white/4 hover:border-black/10 dark:border-white/10 hover:-translate-y-1 transition-all duration-300"
           >
             <div className="mt-0.5 p-2 rounded-lg bg-indigo-500/10 shrink-0">
               <CheckCircle2 className="w-4 h-4 text-indigo-400" />
             </div>
-            <p className="text-gray-300 leading-relaxed text-sm md:text-base">{award}</p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">{award}</p>
           </motion.div>
         ))}
       </div>
