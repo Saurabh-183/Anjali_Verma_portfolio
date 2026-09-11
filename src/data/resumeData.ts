@@ -11,7 +11,7 @@ export const resumeData = {
     company: "TCS",
     location: "Bangalore",
     client: "SAP SE",
-    duration: "September 2022 - Present",
+    duration: "September 2024 - Present",
     bullets: [
       "Expertise in starting/stopping applications and Databases (HANA, Max DB, MSSQL, DB2/DB6, Oracle) with troubleshooting efficiency across ABAP and JAVA stacks.",
       "Excellent track record of coordinating downtimes, planning activities related to RAM resize, parameter tuning, SLES upgrade, and Stack upgrades.",
